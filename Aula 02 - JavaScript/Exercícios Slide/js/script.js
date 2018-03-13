@@ -48,7 +48,5 @@ switch (dia) {
   case 2:
     diaSemana = "Sábado";
   break;
-  default:
-
 }
 alert(diaSemana);
