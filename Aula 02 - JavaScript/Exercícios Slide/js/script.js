@@ -5,8 +5,11 @@ var nomeB = Gustavo;
 alert(nomeA);
 alert(nomeB);*/
 
-/*Exercício 2-B*/
+/*Exercício 1-B*/
 var nome = "Gustavo Keith Okamoto";
 var idade = 22;
 var sexoFeminino = false;
 var peso = 100.00;
+
+/*Exercício 2*/
+alert("Olá, seu nome é " + nome + ", você tem " + idade + " anos.");
