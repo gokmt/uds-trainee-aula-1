@@ -13,3 +13,12 @@ var peso = 100.00;
 
 /*Exercício 2*/
 alert("Olá, seu nome é " + nome + ", você tem " + idade + " anos.");
+
+/*Exercício 3*/
+if (idade <= 18) {
+  alert("Novinho(a)");
+}else if (idade <= 30) {
+  alert("Tiozinho(a)");
+}else{
+  alert("Tiozão(ona)");
+}
