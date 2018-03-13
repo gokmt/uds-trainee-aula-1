@@ -22,3 +22,33 @@ if (idade <= 18) {
 }else{
   alert("Tiozão(ona)");
 }
+
+/*Exercício 4*/
+var dia = new Date().getDay();
+var diaSemana;
+switch (dia) {
+  case 0:
+    diaSemana = "Domingo";
+  break;
+  case 1:
+    diaSemana = "Segunda-Feira";
+  break;
+  case 2:
+    diaSemana = "Terça-Feira";
+  break;
+  case 3:
+    diaSemana = "Quarta-Feira";
+  break;
+  case 4:
+    diaSemana = "Quinta-Feira";
+  break;
+  case 5:
+    diaSemana = "Sexta-Feira";
+  break;
+  case 2:
+    diaSemana = "Sábado";
+  break;
+  default:
+
+}
+alert(diaSemana);
