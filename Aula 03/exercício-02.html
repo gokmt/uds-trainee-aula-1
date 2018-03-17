@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercício 02</title>
+  </head>
+  <body>
+
+    <div id="valor">
+      0
+    </div>
+    <button type="button" name="button" id="adicionar">Adicionar</button>
+    <button type="button" name="button" id="subtrair">Subtrair</button>
+
+    <script type="text/javascript">
+
+      document.getElementById("adicionar").addEventListener("click",adicionarNumero);
+      document.getElementById("subtrair").addEventListener("click",subtrairNumero);
+
+      var contador = 0;
+      function adicionarNumero(){
+        document.getElementById("valor").innerHTML = contador++;
+      }
+
+      function subtrairNumero(){
+        document.getElementById("valor").innerHTML = contador--;
+      }
+    </script>
+  </body>
+</html>
