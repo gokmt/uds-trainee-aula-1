@@ -84,7 +84,7 @@
   flex-direction: column;
 }
 
-.perfil {
+.sobre {
   padding: 5px;
   margin: 15px 250px;
   background-color: #00B4CC;
@@ -92,7 +92,7 @@
 }
 
 .conteudo {
-  text-align: justify;
+  text-align: center;
   margin: 30px;
 }
 
@@ -109,4 +109,17 @@
   width: 50px;
   border: 3px solid black;
   border-radius: 50%;
+}
+
+.fotos{
+  margin-left: 400px;
+}
+
+.slides{
+  width: 300px;
+}
+
+.textoPerfil ul li{
+  list-style: none;
+  text-align: center;
 }

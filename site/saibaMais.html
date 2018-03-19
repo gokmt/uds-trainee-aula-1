@@ -32,14 +32,24 @@
 
         <div class="conteudo">
           <div class="sobre"><p>SOBRE</p></div>
-          <div class="fotos" style="max-width:500px">
-            <img class="slides" src="img/imagem1.jpg">
-            <img class="slides" src="img/imagem2.jpg">
-            <img class="slides" src="img/imagem3.jpg">
-          </div>
           <div class="textoPerfil">
-            <p>Alguns dos lugares que eu gostaria de ir.</p>
-            <a href="saibaMais.html">Saiba mais...</a>
+            <h3>Objetivo</h3>
+            Conhecer a equipe da empresa com a oportunidade de crescer profissionalmente de maneira produtiva e eficiente para o desenvolvimento da empresa como um todo.
+
+            <h3>Qualificações e atividades profissionais</h3>
+            <p>Inglês - básico.</p>
+            DB1 Start 2017 - Linguagem Java - 222 Horas.
+
+            <h3>Informações adicionais</h3>
+            <ul>
+              <li>Experiência acadêmica em programação em Java Orientação a objetos.</li>
+              <li>Experiência acadêmica em SQL básico.</li>
+              <li>Experiência acadêmica em AngularJS.</li>
+              <li>Experiência acadêmica em HTML, CSS.</li>
+              <li>Experiência acadêmica em Git (Git Bash).</li>
+              <li>Experiência acadêmica em UML.</li>
+            </ul>
+
           </div>
         </div>
 
@@ -52,23 +62,5 @@
 
     </div>
 
-    <script>
-      var myIndex = 0;
-      carousel();
-
-      function carousel() {
-          var i;
-          var x = document.getElementsByClassName("slides");
-          for (i = 0; i < x.length; i++) {
-             x[i].style.display = "none";
-          }
-          myIndex++;
-          if (myIndex > x.length) {
-            myIndex = 1
-          }
-          x[myIndex-1].style.display = "block";
-          setTimeout(carousel, 2000);
-      }
-    </script>
   </body>
 </html>
