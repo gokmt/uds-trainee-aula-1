@@ -84,7 +84,7 @@
   flex-direction: column;
 }
 
-.perfil {
+.contato {
   padding: 5px;
   margin: 15px 250px;
   background-color: #00B4CC;
@@ -109,4 +109,24 @@
   width: 50px;
   border: 3px solid black;
   border-radius: 50%;
+}
+
+/*formContato*/
+.formContato{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(194, 232, 200);
+}
+
+.formContato label{
+  padding-top: 15px;
+}
+
+.formContato .botoes input{
+  padding:5px 10px;
+
 }
