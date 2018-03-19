@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var numeros = [];
+
+      function adicionarNumeros(numero){
+        numeros.push(parseInt(numero));
+      }
+
+      function verificarNumeros(){
+        var auxiliar = [];
+        for (var i = 0; i <= 2; i++) {
+          auxiliar.push(parseInt(prompt("Digite um número: ")));
+        }
+        alert(auxiliar);
+        for (var x = 0; x < auxiliar.length; x++) {
+          for (var z = 0; z < numeros.length; z++) {
+            if (auxiliar[x] === numeros[z]) {
+              alert("encontrei" + auxiliar[x] + numeros[z]);
+            }
+          }
+        }
+        for (var y = 0; y < numeros.length; y++) {
+
+        }
+
+      }
+
+      adicionarNumeros(1);
+      adicionarNumeros(2);
+      adicionarNumeros(3);
+      verificarNumeros();
+
+    </script>
+  </body>
+</html>
