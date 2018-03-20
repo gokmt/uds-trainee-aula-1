@@ -58,7 +58,7 @@
 .box-2{
   display: flex;
   flex-direction: column;
-  flex: 4;
+  flex: 3;
   background-image: url("../img/background.png");
 }
 
@@ -127,13 +127,15 @@
   }
   #menu #fotoPrincipal{
     margin-top: 30px;
-    width: 150px;
+    width: 250px;
     border: 3px solid black;
     border-radius: 50%;
   }
 
   #menu ul{
     margin-top: 50px;
+    text-align:center;
+    margin-left: 40px;
   }
 
   #menu ul li{
@@ -141,8 +143,9 @@
   }
 
   #menu ul a{
-    text-align: justify;
+    text-align: center;
     font-family: abelRegular;
+    font-size: 25px;
   }
   #texto .titulo-perfil{
     padding: 5px;
