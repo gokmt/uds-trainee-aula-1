@@ -1,0 +1,132 @@
+.container, html, body{
+  height:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: abelRegular;
+  src: url("../fonts/abelRegular.ttf");
+}
+
+.box-1{
+  display:flex;
+  justify-content: center;
+  background-color: #313B3F;
+  flex: 1;
+}
+
+#menu{
+  display: flex;
+  flex-direction: row;
+}
+
+#menu #fotoPrincipal{
+  width: 150px;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+#menu ul{
+
+}
+
+#menu ul a{
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+  font-family: abelRegular;
+}
+
+#menu ul a li{
+  width: 100px;
+  color: white;
+}
+
+.box-2{
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+  background-image: url("../img/background.png");
+}
+
+#conteudo{
+  height: 100%;
+}
+
+#conteudo .titulo{
+  display: flex;
+  background-color: #BEEEF4;
+  flex-direction: column;
+  text-align: center;
+  font-family: abelRegular;
+}
+
+#rodape{
+  height: 50%;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#rodape a img{
+  width: 50px;
+  border: 3px solid black;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+#redesSociais{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#texto .titulo-perfil{
+  padding: 5px;
+  background-color: #00B4CC;
+  text-align: center;
+  font-family: abelRegular;
+}
+
+#texto .texto-perfil{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: abelRegular;
+}
+
+@media screen and (min-width:768px) {
+  .container{
+    flex-direction: row;
+  }
+  #menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #menu #fotoPrincipal{
+    margin-top: 20px;
+    width: 150px;
+    border: 3px solid black;
+    border-radius: 50%;
+  }
+  #menu ul a{
+    text-align: justify;
+    font-family: abelRegular;
+  }
+  #texto .titulo-perfil{
+    padding: 5px;
+    margin: 15px 250px;
+    background-color: #00B4CC;
+    text-align: center;
+  }
+}
