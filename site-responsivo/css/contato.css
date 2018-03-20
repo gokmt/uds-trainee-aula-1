@@ -1,7 +1,12 @@
-/*GERAL*/
-*{
-    margin: 0;
-    padding: 0;
+.container, html, body{
+  height:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
 }
 
 @font-face {
@@ -9,104 +14,175 @@
   src: url("../fonts/abelRegular.ttf");
 }
 
-/*----------------------------------------------------------------------------*/
-/*MENU*/
-.menu, html, body{
-  height: 100%;
+.box-1{
+  display:flex;
+  justify-content: center;
+  background-color: #313B3F;
+  flex: 1;
 }
 
-.menu{
+#menu{
   display: flex;
   flex-direction: row;
-
 }
 
-.menu ul{
-  text-align: center;
-}
-
-/*----------------------------------------------------------------------------*/
-/*BOX-1*/
-.box-1{
-  background-color: #313B3F;
-  flex:1;
-  align-items: center;
-  text-align: center;
-}
-
-.box-1 img{
-  height: 180px;
-  width: 180px;
+#menu #fotoPrincipal{
+  width: 150px;
   border: 3px solid black;
   border-radius: 50%;
-  margin-top: 40px;
 }
 
-.box-1 ul li{
-  text-decoration: none;
-  padding: 5px 20px;
-  background-color: #00B4CC;
+#menu ul{
+
 }
 
-.box-1 ul li:hover{
+#menu ul a{
   text-decoration: none;
-  padding: 5px 20px;
-  background-color: #018b9e;
+  list-style: none;
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+  font-family: abelRegular;
 }
 
-.box-1 ul li a{
-  text-decoration: none;
-  font: 14px abelRegular;
+#menu ul a li{
+  width: 100px;
   color: white;
 }
 
-/*----------------------------------------------------------------------------*/
-/*BOX-2*/
+#menu ul a li:hover{
+  font-size: 40px;
+  color: blue;
+}
+
 .box-2{
   display: flex;
   flex-direction: column;
+  flex: 3;
   background-image: url("../img/background.png");
-  flex: 5;
 }
 
-.box-2 h1{
-  background-color: #BEEEF4;
-  text-align:center;
-  font-family: abelRegular;
-  font-size: 50px;
+#conteudo{
+  height: 100%;
 }
 
-.box-2 .subTitulo{
-  background-color: #BEEEF4;
-  text-align:center;
-  font-family: abelRegular;
+#conteudo .titulo{
   display: flex;
+  background-color: #BEEEF4;
   flex-direction: column;
-}
-
-.perfil {
-  padding: 5px;
-  margin: 15px 250px;
-  background-color: #00B4CC;
   text-align: center;
+  font-family: abelRegular;
 }
 
-.conteudo {
-  text-align: justify;
-  margin: 30px;
-}
-
-.rodape{
+#rodape{
   height: 100%;
   display:flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: flex-end;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.rodape a img{
+#rodape a img{
   width: 50px;
   border: 3px solid black;
   border-radius: 50%;
+  margin: 20px;
+}
+
+#rodape a img:hover{
+  width: 60px;
+  opacity: 0.4;
+}
+
+#redesSociais{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#texto .titulo-perfil{
+  padding: 5px;
+  background-color: #00B4CC;
+  text-align: center;
+  font-family: abelRegular;
+}
+
+#texto .texto-perfil{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  font-family: abelRegular;
+  margin: 0 80px;
+  text-indent: 1em;
+}
+
+/*formContato*/
+.formContato{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.formContato label{
+  padding-top: 15px;
+}
+
+.formContato .botoes input{
+  padding:5px 10px;
+}
+
+
+
+
+@media screen and (min-width:768px) {
+  .container{
+    flex-direction: row;
+  }
+  #menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #menu #fotoPrincipal{
+    margin-top: 30px;
+    width: 250px;
+    height: 250px;
+    border: 3px solid black;
+    border-radius: 50%;
+  }
+
+  #menu ul{
+    margin-top: 50px;
+    text-align:center;
+    margin-left: 40px;
+  }
+
+  #menu ul li{
+    margin-top: 10px;
+  }
+
+  #menu ul a{
+    text-align: center;
+    font-family: abelRegular;
+    font-size: 25px;
+    font-weight: 20;
+  }
+  #texto .titulo-perfil{
+    padding: 5px;
+    margin: 15px 250px;
+    background-color: #00B4CC;
+    text-align: center;
+  }
+
+  #conteudo .subTitulo{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    justify-content:space-around;
+    font-family: abelRegular;
+  }
+
 }

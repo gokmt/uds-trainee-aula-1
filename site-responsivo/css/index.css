@@ -128,6 +128,7 @@
   #menu #fotoPrincipal{
     margin-top: 30px;
     width: 250px;
+    height: 250px;
     border: 3px solid black;
     border-radius: 50%;
   }
@@ -146,11 +147,21 @@
     text-align: center;
     font-family: abelRegular;
     font-size: 25px;
+    font-weight: 20;
   }
   #texto .titulo-perfil{
     padding: 5px;
     margin: 15px 250px;
     background-color: #00B4CC;
     text-align: center;
+  }
+
+  #conteudo .subTitulo{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    justify-content:space-around;
+    font-family: abelRegular;
   }
 }
