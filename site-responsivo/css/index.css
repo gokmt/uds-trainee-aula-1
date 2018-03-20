@@ -50,10 +50,15 @@
   color: white;
 }
 
+#menu ul a li:hover{
+  font-size: 40px;
+  color: blue;
+}
+
 .box-2{
   display: flex;
   flex-direction: column;
-  flex: 5;
+  flex: 4;
   background-image: url("../img/background.png");
 }
 
@@ -83,6 +88,11 @@
   margin: 20px;
 }
 
+#rodape a img:hover{
+  width: 60px;
+  opacity: 0.4;
+}
+
 #redesSociais{
   display: flex;
   flex-direction: row;
@@ -100,8 +110,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  text-align: justify;
   font-family: abelRegular;
+  margin: 0 80px;
+  text-indent: 1em;
 }
 
 @media screen and (min-width:768px) {
@@ -114,11 +126,20 @@
     text-align: center;
   }
   #menu #fotoPrincipal{
-    margin-top: 20px;
+    margin-top: 30px;
     width: 150px;
     border: 3px solid black;
     border-radius: 50%;
   }
+
+  #menu ul{
+    margin-top: 50px;
+  }
+
+  #menu ul li{
+    margin-top: 10px;
+  }
+
   #menu ul a{
     text-align: justify;
     font-family: abelRegular;
