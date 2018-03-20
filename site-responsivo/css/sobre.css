@@ -107,13 +107,23 @@
 }
 
 #texto .texto-perfil{
+  text-align: center;
+  font-family: abelRegular;
+}
+
+#texto .texto-perfil ul{
+  list-style:none;
+}
+
+.slides{
+  width: 100px;
+}
+
+.fotos{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: justify;
-  font-family: abelRegular;
-  margin: 0 80px;
-  text-indent: 1em;
+  margin-left: 315px;
 }
 
 @media screen and (min-width:768px) {
@@ -163,5 +173,26 @@
     justify-content: center;
     justify-content:space-around;
     font-family: abelRegular;
+  }
+
+  #rodape{
+    height: 100%;
+  }
+
+  #texto{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .fotos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 355px;
+  }
+
+  .slides{
+    width: 300px;
   }
 }
