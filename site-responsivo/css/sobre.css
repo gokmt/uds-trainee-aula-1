@@ -100,7 +100,7 @@
 }
 
 #texto .titulo-perfil{
-  padding: 5px;
+  
   background-color: #00B4CC;
   text-align: center;
   font-family: abelRegular;
@@ -115,16 +115,19 @@
   list-style:none;
 }
 
-.slides{
-  width: 100px;
-}
-
-.fotos{
+#texto{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 315px;
+  align-items: center;
 }
+
+.slides{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 200px;
+}
+
 
 @media screen and (min-width:768px) {
   .container{
@@ -160,7 +163,7 @@
     font-weight: 20;
   }
   #texto .titulo-perfil{
-    padding: 5px;
+    padding: 5px 240px;
     margin: 15px 250px;
     background-color: #00B4CC;
     text-align: center;
@@ -182,17 +185,11 @@
   #texto{
     display:flex;
     flex-direction: column;
-    justify-content: center;
-  }
-
-  .fotos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 355px;
+    align-items: center;
   }
 
   .slides{
-    width: 300px;
+    width: 350px;
   }
+
 }
